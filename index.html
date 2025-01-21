@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For You, My Love</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+  <!-- Home Screen -->
+  <div class="screen home-screen">
+    <h1 class="fade-in">Welcome, my love! 💖</h1>
+    <p class="fade-in">Will You Be My Valentine?</p>
+    <button id="go-to-note" class="btn bounce">Yes :)</button>
+    <!-- Add this button somewhere in your HTML -->
+    <button id="noButton" class="btn">No:(</button>
+  </div>
+
+  <!-- Love Note Screen -->
+  <div class="screen love-note-screen hidden">
+    <h1>Hey love 💖</h1>
+    <p>Just wanted to remind you how amazing you are! You light up my life in ways I can't even describe.</p>
+    <p>You mean the world to me, and I hope you have the best day. 😊</p>
+    <button id="go-to-letter" class="btn bounce">Go to Love Letter 💌</button>
+    <button id="go-back-home" class="btn bounce">Back to Home 🏠</button>
+    <button id="go-to-bible-verses" class="btn bounce">Bible Verses for You ✝️</button>
+  </div>
+
+  <!-- Love Letter Screen -->
+  <div class="screen letter-screen hidden">
+    <div class="heart-container">
+      <div class="heart-animation">
+        <span class="heart animate-heart">&#10084;</span>
+        <span class="heart animate-heart">&#128149;</span>
+        <span class="heart animate-heart">&#10084;</span>
+        <span class="heart animate-heart">&#128151;</span>
+      </div>
+    </div>
+
+    <div class="letter-box">
+      <h1>Your Love Letter 💌</h1>
+      <p class="love-letter-text">
+        Dear My Love, 💖<br><br>
+        You are and will always be the love of my life! The one who I want to spend the rest of my life. You mean the
+        world to me and I cannot express how much I love you. You bring light to everything around you even when you
+        don't feel like it. You are my best friend  and I cannot imagine someone better than you! 💕<br><br>
+        I love you so much,
+        Cameron❤️
+      </p>
+    </div>
+
+    <button id="go-back-note" class="btn bounce">Back to Love Note</button>
+    <button id="go-back-home-letter" class="btn bounce">Back to Home</button>
+  </div>
+
+  <!-- Bible Verses Section -->
+  <div class="screen bible-verses-screen hidden">
+    <h1>Bible Verses for You 💖</h1>
+    <p>Here are some Bible verses for when you might be feeling a certain way:</p>
+
+    <div class="verse-category">
+      <h2>When You Need Strength</h2>
+      <p><strong>Isaiah 41:10:</strong> "So do not fear, for I am with you; do not be dismayed, for I am your God. I will strengthen you and help you; I will uphold you with my righteous right hand."</p>
+    </div>
+
+    <div class = "verse-category">
+      <h2>When You Are Sad</h2>
+      <p><strong>Psalm 34:18:</strong> "The Lord is close to the brokenhearted and saves those who are crushed in spirit."</p>
+
+    </div>
+
+    <div class="verse-category">
+      <h2>When You Feel Anxious</h2>
+      <p><strong>Philippians 4:6-7:</strong> "Do not be anxious about anything, but in every situation, by prayer and petition, with thanksgiving, present your requests to God. And the peace of God, which transcends all understanding, will guard your hearts and your minds in Christ Jesus."</p>
+    </div>
+
+    <div class="verse-category">
+      <h2>When You Need Comfort</h2>
+      <p><strong>2 Corinthians 1:3-4:</strong> "Praise be to the God and Father of our Lord Jesus Christ, the Father of compassion and the God of all comfort, who comforts us in all our troubles, so that we can comfort those in any trouble with the comfort we ourselves receive from God."</p>
+    </div>
+
+    <div class="verse-category">
+      <h2>When You Feel Joyful</h2>
+      <p><strong>Psalm 16:11:</strong> "You make known to me the path of life; you will fill me with joy in your presence, with eternal pleasures at your right hand."</p>
+    </div>
+
+    <button id="go-back-home-bible" class="btn bounce">Back to Home</button>
+    <button id="go-back-note-bible" class="btn bounce">Back to Love Note</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

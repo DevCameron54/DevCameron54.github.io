@@ -1,0 +1,161 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #FFEBF0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+    text-align: center;
+}
+
+.screen {
+    display: none;
+}
+
+.screen.active {
+    display: block;
+}
+
+.fade-in {
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Screen Styling */
+.home-screen, .love-note-screen, .letter-screen, .bible-verses-screen {
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.home-screen h1, .love-note-screen h1, .letter-screen h1, .bible-verses-screen h1 {
+    font-size: 36px;
+    color: #FF69B4;
+}
+
+.btn {
+    background-color: #FF69B4;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 10px;
+}
+
+.btn:hover {
+    background-color: #ff1493;
+}
+
+.btn.bounce {
+    animation: bounceBtn 1s ease-in-out infinite;
+}
+
+@keyframes bounceBtn {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+}
+
+/* Love Letter Heart Animation */
+.heart-container {
+    position: relative;
+}
+
+.heart-animation {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.heart {
+    font-size: 30px;
+    color: #FF1493;
+    animation: heartAnimation 2s infinite alternate;
+}
+
+@keyframes heartAnimation {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1.5);
+    }
+}
+
+/* Bible Verses Section */
+.verse-category {
+    background-color: #f8f8f8;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.verse-category h2 {
+    font-size: 24px;
+    color: #ff1493;
+}
+
+.verse-category p {
+    font-size: 18px;
+    color: #333;
+}
+@keyframes glitchAnimation {
+    0% {
+        text-shadow: 1px 0 red, -1px 0 blue, 0 1px green, 0 -1px yellow;
+        transform: translateX(0);
+    }
+    20% {
+        text-shadow: -1px 0 red, 1px 0 blue, 0 1px green, 0 -1px yellow;
+        transform: translateX(5px);
+    }
+    40% {
+        text-shadow: 1px 0 red, -1px 0 blue, 0 1px green, 0 -1px yellow;
+        transform: translateX(-5px);
+    }
+    60% {
+        text-shadow: -1px 0 red, 1px 0 blue, 0 1px green, 0 -1px yellow;
+        transform: translateX(0);
+    }
+    80% {
+        text-shadow: 1px 0 red, -1px 0 blue, 0 1px green, 0 -1px yellow;
+        transform: translateX(5px);
+    }
+    100% {
+        text-shadow: -1px 0 red, 1px 0 blue, 0 1px green, 0 -1px yellow;
+        transform: translateX(0);
+    }
+}
+
